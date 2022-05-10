@@ -4,7 +4,9 @@ body {
   font-family: 'Epilogue', sans-serif;
   margin: 0;
   box-sizing: border-box;
-  padding: 0 45px 0 45px;  
+  padding: 0 45px 0 45px; 
+  overflow-y: scroll; 
+  overflow-x: hidden; 
 }
 
 .grey-color {
@@ -58,28 +60,34 @@ body {
 
 .main-h1 {
   width: 100%;
-  font-size: 4rem;
+  font-size: 5vw;
   margin-top: 0;
 }
 
 .main-h1-make {
   width: 100%;
-  font-size: 4rem;
+  font-size: 5vw;
   font-weight: 700;
 }
 
 .main-left-container {
-  width: 100%;
+  max-width: 100%;
   margin: 8rem 0 0 0;
 }
 .main-right-container {
-  width: 100%;
+  min-width: 100%;
   padding: 25px;
 }
 
 .main-right-container img {
-  width: 70%;
+  /* width: 70%;
   height: auto;
+  max-height: fit-content; */
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  min-height: 70%;
+  
 }
 
 .main-p {
@@ -103,4 +111,25 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 140px 0 0;
+}
+
+@media screen and (max-width: 968px) {
+  .nav-links {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  body {
+    overflow-x: none; 
+    overflow-y: scroll; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-right-container {
+    padding: 0;
+  }
 }
