@@ -4,6 +4,7 @@ import { ReactComponent as AudioPhileLogo } from './assets/images/client-audioph
 import { ReactComponent as MeetLogo } from './assets/images/client-meet.svg'
 import { ReactComponent as MakerLogo } from './assets/images/client-maker.svg'
 import { ReactComponent as IconArrowUp } from './assets/images/icon-arrow-up.svg'
+import { ReactComponent as Hamburger } from './assets/images/icon-menu.svg'
 import { ReactComponent as IconArrowDown } from './assets/images/icon-arrow-down.svg'
 import ImageHeroDesktopSrc from './assets/images/image-hero-desktop.png'
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           <div className="nav-links-container nav-links-container-right">
             <a href="/" className="nav-links grey-color ">Login</a>
             <a href="/" className="nav-links grey-color nav-btn ">Register</a>
+            <Hamburger className='hamburger'/>
           </div>
         </div>
           

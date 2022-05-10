@@ -13,6 +13,10 @@ body {
   color: rgb(105, 105, 105);
 }
 
+.hamburger {
+  display: none;
+}
+
 .nav {
   padding: 25px 0 25px 0;
 }
@@ -56,6 +60,7 @@ body {
   margin-bottom: 50px;
   margin-left: 4rem;
   margin-right: 4rem;
+  height: 100vh;
 }
 
 .main-h1 {
@@ -114,6 +119,11 @@ body {
 }
 
 @media screen and (max-width: 968px) {
+
+  .hamburger {
+    display: flex;
+  }
+
   .nav-links {
     display: none;
   }
@@ -126,10 +136,84 @@ body {
     overflow-x: none; 
     overflow-y: scroll; 
   }
+  .main-right-container img {
+    display: none;
+  }
+  .main-right-container {
+    padding: 5px;
+    background-image: url('/Users/dariusseals/Desktop/frontend-mentor-dropdown-challenge/src/assets/images/image-hero-mobile.png');
+    min-width: 100vw;
+    min-height: 100vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 19px;
+    position: absolute;
+    margin-bottom: 0px;
+    top: 3rem;
+    
+
+  }
+
+  .main-left-container {
+    position: absolute;
+    top: 40rem;
+  }
+  
 }
 
 @media screen and (max-width: 600px) {
   .main-right-container {
+    top: -50;
+    padding-top: 0;
+    margin-top: -5rem;
+  }
+
+  .main-right-container img {
+    display: none;
+  }
+
+ 
+  .main-p {
+    font-size: larger;
     padding: 0;
+    margin-right: 2rem;
+    position: relative;
+    right: 60px;
+    width: 100%;
+    text-align: center;
+  }
+  .main-h1 {
+    font-size: 2rem;
+    display: inline;
+    
+  }
+  .main-h1-make {
+   font-size: 2rem;
+  }
+
+  .main-btn {
+    align-self: flex-start;
+    position: relative;
+    left: 70px;
+  }
+
+  .btn-p-container {
+    display: flex;
+    flex-direction: column; 
+    
+  }
+
+  .main-left-container-footer {
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+    right: 55px;
+    
+  }
+
+  .main-left-container {
+    position: absolute;
+    top: 30rem;
   }
 }
