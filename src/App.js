@@ -24,7 +24,7 @@ const App = () => {
       
         <div className="nav-right">
           <a href="/" className="nav__links">Login</a>
-          <a href="/" className="nav__links">Register</a>
+          <a href="/" className="nav__links main__btn-inverted">Register</a>
           <Hamburger className='hamburger'/>
         </div>
               
