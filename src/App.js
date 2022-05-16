@@ -7,46 +7,42 @@ import { ReactComponent as IconArrowUp } from './assets/images/icon-arrow-up.svg
 import { ReactComponent as Hamburger } from './assets/images/icon-menu.svg'
 import { ReactComponent as IconArrowDown } from './assets/images/icon-arrow-down.svg'
 import ImageHeroDesktopSrc from './assets/images/image-hero-desktop.png'
+import ImageHeroMobileSrc from './assets/images/image-hero-mobile.png'
 const App = () => {
   return (
     <div className="App">
-      <nav className="nav">
+    
+      <header className="header"> 
+
+        <nav className="nav-left">
+        <Logo className='logo' />
+          <a href="/" className="nav__links ">Features <IconArrowDown /></a>
+          <a href="/" className="nav__links ">Company <IconArrowDown /></a>
+          <a href="/" className="nav__links ">Careers</a>
+          <a href="/" className="nav__links ">About</a>
+        </nav>
       
-        
-        <div className='nav-links-main-container'>
-        
-          <div className="nav-links-container nav-links-container-left">
-          <Logo className='nav-logo' />
-            <a href="/" className="nav-links grey-color">Features <IconArrowDown /></a>
-            <a href="/" className="nav-links grey-color">Company <IconArrowDown /></a>
-            <a href="/" className="nav-links grey-color">Careers</a>
-            <a href="/" className="nav-links grey-color">About</a>
-          </div>
-        
-          <div className="nav-links-container nav-links-container-right">
-            <a href="/" className="nav-links grey-color ">Login</a>
-            <a href="/" className="nav-links grey-color nav-btn ">Register</a>
-            <Hamburger className='hamburger'/>
-          </div>
+        <div className="nav-right">
+          <a href="/" className="nav__links">Login</a>
+          <a href="/" className="nav__links">Register</a>
+          <Hamburger className='hamburger'/>
         </div>
-          
-        
-        
-      </nav>
+              
+      </header>
     
     
       <main className="main">
-        <div className="main-left-container">
-          <span className='main-h1-make'>Make</span><h1 className='main-h1'>  remote work</h1>
-          <div className='btn-p-container'>
-            <p className='main-p'>
+        <div className="main__left-container">
+          <h1 className='main__left-h1'><span className='main__left-h1-span'>Make</span> remote work</h1>
+          
+            <p className='main__p'>
               Get your team in sync, no matter your location. Streamline processes, 
               create team rituals, and watch productivity soar.
             </p>
-            <button className='main-btn'>Learn more</button>
-          </div>
+            <button className='main__btn'>Learn more</button>
+         
           
-          <footer className='main-left-container-footer'>
+          <footer className='main__left-container-footer'>
             <DataBizLogo />
             <AudioPhileLogo />
             <MeetLogo />
@@ -54,8 +50,9 @@ const App = () => {
           </footer>
         </div>
 
-        <div className="main-right-container">
-          <img alt='' src={ImageHeroDesktopSrc} />
+        <div className="main__right-container">
+          <img alt='' src={ImageHeroDesktopSrc} className="main__img"/>
+          <img alt='' src={ImageHeroMobileSrc} className="main__img-mobile"/>
         </div>
       </main>
     
